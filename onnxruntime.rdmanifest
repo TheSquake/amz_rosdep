@@ -10,4 +10,4 @@ install-script: |
   rm /tmp/onnxruntime.tgz
 check-presence-script: |
   #!/bin/bash
-  exit
+  exit 1
