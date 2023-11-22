@@ -1,6 +1,6 @@
 uri: 'https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/empty.tar'
 
-md5sum: df41600634ca08cb5082877eb64220c9
+md5sum:104f594203d72139c432c6f7465d37c9
 
 install-script: |
   #!/bin/bash
