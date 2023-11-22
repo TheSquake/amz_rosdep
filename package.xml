@@ -1,0 +1,56 @@
+<package format="2">
+        <name>foo_core</name>
+        <version>1.2.4</version>
+        <description>
+        This package provides foo capability.
+        </description>
+        <maintainer email="ivana@osrf.org">Ivana Bildbotz</maintainer>
+        <license>BSD</license>
+
+<!-- py3 -->
+        <build_depend>git-lfs</build_depend>
+        <build_depend>pylon</build_depend>
+        <build_depend>gtsam</build_depend>
+        <build_depend>python3-onnxruntime-pip</build_depend>
+        <build_depend>osqp_vendor</build_depend>
+        <!-- FIX THIS -->
+        <!-- <build_depend>libpcan</build_depend> -->
+        <build_depend>python3-rospkg</build_depend>
+
+<!-- apt -->
+        <build_depend>python3-pip</build_depend>
+        <build_depend>cmake</build_depend>
+        <!-- FIX THIS -->
+        <!-- <build_depend>nvme-cli</build_depend> -->
+        <build_depend>gnome-terminal</build_depend>
+        <build_depend>autoconf</build_depend>
+        <!-- FIX THIS -->
+        <!-- <build_depend>ifopt</build_depend> -->
+        <build_depend>cgal</build_depend>
+        <build_depend>cppad</build_depend>
+        <!-- FIX THIS -->
+        <!-- <build_depend>jsk_visualization</build_depend> --> 
+        <build_depend>libpcap</build_depend>
+        <build_depend>yaml_cpp_vendor</build_depend>
+        <build_depend>libopencv-dev</build_depend>
+        <build_depend>eigen</build_depend>
+        <build_depend>libjsoncpp-dev</build_depend>
+        <build_depend>spdlog</build_depend>
+        <build_depend>libcurl-dev</build_depend>
+        <!-- FIX THIS -->
+        <!-- <build_depend>python3-catkin-tools</build_depend> -->
+
+<!-- install -->
+        <build_depend>python3-requests</build_depend>
+        <build_depend>python3-termcolor</build_depend>
+        <build_depend>python3-psutil</build_depend>
+        <!-- FIX THIS -->
+        <!-- <build_depend>pynvml</build_depend> -->
+        <build_depend>casadi-pip</build_depend>
+        <!-- FIX THIS -->
+        <build_depend>rclpy_message_converter</build_depend>
+        <build_depend>python3-pil</build_depend>
+        <!-- FIX THIS -->
+        <!-- <build_depend>customtkinter</build_depend> -->
+
+</package>

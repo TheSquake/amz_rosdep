@@ -1,0 +1,4 @@
+ pylon:
+  ubuntu:
+    source:
+      uri: "./onnxruntime.rdmanifest"

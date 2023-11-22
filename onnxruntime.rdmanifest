@@ -1,0 +1,10 @@
+install-script: |
+  #!/bin/bash
+      echo 'using the following link: [(ver)]'
+      wget [(ver)] -O /tmp/onnxruntime.tgz
+      mkdir -p ~/.amz/libs
+      tar zxvf /tmp/onnxruntime.tgz -C $HOME/.amz/libs
+      rm /tmp/onnxruntime.tgz
+check-presence-script: |
+  #!/bin/bash
+  exit
