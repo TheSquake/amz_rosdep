@@ -1,13 +1,13 @@
 uri: 'https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/empty.tar'
 
 md5sum:104f594203d72139c432c6f7465d37c9
-
-install-script: |
+install-script: | 
   #!/bin/bash
   wget "https://github.com/microsoft/onnxruntime/releases/download/v1.12.0/onnxruntime-linux-x64-gpu-1.12.0.tgz" -O /tmp/onnxruntime.tgz
   mkdir -p ~/.amz/libs
   tar zxvf /tmp/onnxruntime.tgz -C $HOME/.amz/libs
   rm /tmp/onnxruntime.tgz
+
 check-presence-script: |
   #!/bin/bash
   exit 1
