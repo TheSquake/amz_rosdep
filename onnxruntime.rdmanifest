@@ -1,7 +1,8 @@
 install-script: |
   #!/bin/bash
-      echo 'using the following link: [(ver)]'
-      wget [(ver)] -O /tmp/onnxruntime.tgz
+      ver=https://github.com/microsoft/onnxruntime/releases/download/v1.12.0/onnxruntime-linux-x64-gpu-1.12.0.tgz
+      echo 'using the following link: $ver'
+      wget $ver -O /tmp/onnxruntime.tgz
       mkdir -p ~/.amz/libs
       tar zxvf /tmp/onnxruntime.tgz -C $HOME/.amz/libs
       rm /tmp/onnxruntime.tgz
