@@ -1,4 +1,4 @@
  pylon:
   ubuntu:
     source:
-      uri: "./onnxruntime.rdmanifest"
+      uri: "https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/onxruntime.rdmanifest"
