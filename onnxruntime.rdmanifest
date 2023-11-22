@@ -1,6 +1,6 @@
 uri: 'https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/empty.tar'
 
-md5sum: 1276481102f218c981e0324180bafd9f 
+md5sum: 104f594203d72139c432c6f7465d37c9 
 install-script: |  
   #!/bin/bash
   wget "https://github.com/microsoft/onnxruntime/releases/download/v1.12.0/onnxruntime-linux-x64-gpu-1.12.0.tgz" -O /tmp/onnxruntime.tgz
