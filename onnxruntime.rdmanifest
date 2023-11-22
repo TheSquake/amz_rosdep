@@ -4,12 +4,12 @@ md5sum: df41600634ca08cb5082877eb64220c9
 
 install-script: |
   #!/bin/bash
-      ver=https://github.com/microsoft/onnxruntime/releases/download/v1.12.0/onnxruntime-linux-x64-gpu-1.12.0.tgz
-      echo 'using the following link: $ver'
-      wget $ver -O /tmp/onnxruntime.tgz
-      mkdir -p ~/.amz/libs
-      tar zxvf /tmp/onnxruntime.tgz -C $HOME/.amz/libs
-      rm /tmp/onnxruntime.tgz
+  ver=https://github.com/microsoft/onnxruntime/releases/download/v1.12.0/onnxruntime-linux-x64-gpu-1.12.0.tgz
+  echo 'using the following link: $ver'
+  wget $ver -O /tmp/onnxruntime.tgz
+  mkdir -p ~/.amz/libs
+  tar zxvf /tmp/onnxruntime.tgz -C $HOME/.amz/libs
+  rm /tmp/onnxruntime.tgz
 check-presence-script: |
   #!/bin/bash
   exit
