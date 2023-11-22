@@ -1,4 +1,4 @@
- onnxruntime:
+onnxruntime:
   ubuntu:
     source:
       uri: "https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/onnxruntime.rdmanifest"
