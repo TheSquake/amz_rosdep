@@ -1,0 +1,18 @@
+uri: 'https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/empty.tar'
+
+md5sum: 1276481102f218c981e0324180bafd9f 
+install-script: |  
+  #!/bin/bash
+  echo "Downloading dependencies"
+  sudo apt install -y linux-headers-`uname -r`                                                
+  sudo apt install -y libpopt-dev                                                             
+  echo "Downloading pcan"
+  wget https://www.peak-system.com/fileadmin/media/linux/files/peak-linux-driver-8.14.0.tar.gz
+  echo "Installing pcan"
+  tar -xvf peak-linux-driver-8.14.0.tar.gz
+  cd peak-linux-driver-8.14.0 && make clean all
+  cd peak-linux-driver-8.14.0 && sudo make install
+
+check-presence-script: |
+  #!/bin/bash
+  exit 1

@@ -1,0 +1,4 @@
+libpcan:
+  ubuntu:
+    source:
+      uri: "https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/libpcan/libpcan.rdmanifest"
