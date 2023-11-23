@@ -10,4 +10,8 @@ install-script: |
 
 check-presence-script: |
   #!/bin/bash
-  exit 1
+  if [ -d ~/.amz/libs/onnxruntime-linux-x64-gpu-1.12.0 ]; then 
+    echo true; 
+  else 
+    echo false; 
+  fi 

@@ -15,4 +15,8 @@ install-script: |
 
 check-presence-script: |
   #!/bin/bash
-  exit 1
+  if [ -f /usr/lib/libpcanbasic.so ]; then 
+    exit 0; 
+  else 
+    exit 1; 
+  fi
