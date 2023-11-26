@@ -7,11 +7,14 @@ install-script: |
   echo "Cloning OSQP from github:"
   git clone --recursive --branch v0.6.3 https://github.com/osqp/osqp.git
   mkdir osqp/build
+  #!/bin/bash
   echo "Building and Installing OSQP:"
   cd osqp/build/ && cmake -G "Unix Makefiles" .. && sudo cmake --build . --target install
+  #!/bin/bash
   echo "Cloning OSQP Eigen Wrappers from github:"
   git clone https://github.com/robotology/osqp-eigen.git
   mkdir osqp-eigen/build
+  #!/bin/bash
   echo "Building and Installing Eigen Wrappers:"
   cd osqp-eigen/build/ && cmake ../ && make
   cd osqp-eigen/build/ && sudo make install
