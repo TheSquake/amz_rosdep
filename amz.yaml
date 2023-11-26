@@ -34,3 +34,6 @@ customtkinter:
 
 nvme-cli:
   ubuntu: [nvme-cli] 
+
+libyaml-cpp-dev:
+  ubuntu: [libyaml-cpp-dev] 
