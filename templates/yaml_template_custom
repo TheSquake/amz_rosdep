@@ -1,0 +1,4 @@
+$dep_name:
+  ubuntu:
+    source:
+      uri: "https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/$dep_name/$dep_name.rdmanifest?token="

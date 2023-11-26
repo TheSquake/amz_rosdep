@@ -1,0 +1,38 @@
+libpcan:
+  ubuntu:
+    source:
+      uri: "https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/libpcan/libpcan.rdmanifest?token="
+
+onnxruntime:
+  ubuntu:
+    source:
+      uri: "https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/onnxruntime/onnxruntime.rdmanifest?token="
+
+nvme-cli:
+  ubuntu:
+    source:
+      uri: "https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/nvme-cli/nvme-cli.rdmanifest?token="
+
+ifopt:
+  ubuntu: [ros-noetic-ifopt] 
+
+jsk-rviz-plugins:
+  ubuntu: [ros-noetic-jsk-rviz-plugins] 
+
+python3-catkin-tools:
+  ubuntu: [python3-catkin-tools] 
+
+pynvml:
+  ubuntu:
+      pip:
+        packages: [pynvml]
+
+rospy-message-converter:
+  ubuntu:
+      pip:
+        packages: [rospy-message-converter]
+
+customtkinter:
+  ubuntu:
+      pip:
+        packages: [customtkinter]
