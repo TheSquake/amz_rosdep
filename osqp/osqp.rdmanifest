@@ -1,0 +1,21 @@
+uri: 'https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/empty.tar'
+
+md5sum: 1276481102f218c981e0324180bafd9f 
+
+install-script: |  
+  #!/bin/bash
+  echo "Cloning OSQP from github:"
+  git clone --recursive --branch v0.6.3 https://github.com/osqp/osqp.git
+  mkdir osqp/build
+  echo "Building and Installing OSQP:"
+  cd osqp/build/ && cmake -G "Unix Makefiles" .. && sudo cmake --build . --target install
+  echo "Cloning OSQP Eigen Wrappers from github:"
+  git clone https://github.com/robotology/osqp-eigen.git
+  mkdir osqp-eigen/build
+  echo "Building and Installing Eigen Wrappers:"
+  cd osqp-eigen/build/ && cmake ../ && make
+  cd osqp-eigen/build/ && sudo make install
+
+check-presence-script: |
+  #!/bin/bash
+  if [ -f /usr/local/lib/libosqp.a ]; then echo true; else echo false; fi

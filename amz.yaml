@@ -37,3 +37,13 @@ nvme-cli:
 
 libyaml-cpp-dev:
   ubuntu: [libyaml-cpp-dev] 
+
+osqp:
+  ubuntu:
+    source:
+      uri: "https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/osqp/osqp.rdmanifest?token="
+
+python3-osqp:
+  ubuntu:
+      pip:
+        packages: [osqp]
