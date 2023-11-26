@@ -8,11 +8,6 @@ onnxruntime:
     source:
       uri: "https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/onnxruntime/onnxruntime.rdmanifest?token="
 
-nvme-cli:
-  ubuntu:
-    source:
-      uri: "https://raw.githubusercontent.com/TheSquake/amz_rosdep/master/nvme-cli/nvme-cli.rdmanifest?token="
-
 ifopt:
   ubuntu: [ros-noetic-ifopt] 
 
@@ -36,3 +31,6 @@ customtkinter:
   ubuntu:
       pip:
         packages: [customtkinter]
+
+nvme-cli:
+  ubuntu: [nvme-cli] 
