@@ -16,8 +16,7 @@ install-script: |
   mkdir osqp-eigen/build
   #!/bin/bash
   echo "Building and Installing Eigen Wrappers:"
-  cd osqp-eigen/build/ && cmake ../ && make
-  cd osqp-eigen/build/ && sudo make install
+  cd osqp-eigen/build/ && cmake ../ && make && sudo make install
 
 check-presence-script: |
   #!/bin/bash
